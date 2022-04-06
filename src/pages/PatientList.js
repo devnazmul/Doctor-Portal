@@ -1,10 +1,13 @@
-import React from 'react'
-import TopNav from '../components/TopNav'
+import React from 'react';
+import PatientMain from '../components/PatientMain';
+import TopNav from '../components/TopNav';
 
-export default function PatientList() {
+export default function PatientList({doctors, patient, appointments, files}) {
+
   return (
-    <div className='flex justify-center items-center text-5xl w-full h-screen'>
-      <TopNav />
+    <div className='w-full h-screen'>
+      <TopNav patient={patient} doctors={doctors} />
+      <PatientMain patient={patient} doctors={doctors} appointments={appointments} files={files} />
     </div>
   )
 }

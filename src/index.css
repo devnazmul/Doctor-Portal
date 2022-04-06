@@ -1,10 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   font-family: "Poppins", sans-serif;
+  /* font-family: "Lato", sans-serif; */
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+.dSize {
+  font-family: "Lato", sans-serif;
+}
+.vertical-line {
+  width: 0.5px;
+}
+.notes {
+  line-height: 30px;
+}
+.appoin-cards {
+  font-family: "Lato", sans-serif;
+}
+.scrollBar::-webkit-scrollbar {
+  width: 4px;
+}
+.scrollBar::-webkit-scrollbar-thumb:hover {
+  background-color: #0d53fc;
+}
+.scrollBar::-webkit-scrollbar-thumb {
+  background-color: rgb(164, 164, 164);
+  border-radius: 1000px;
+}
+.scrollBar::-webkit-scrollbar-track {
+  background-color: rgb(213, 213, 213);
+  border-radius: 1000px;
 }

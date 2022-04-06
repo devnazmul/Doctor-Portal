@@ -1,0 +1,12 @@
+.scrollBarSpecial::after {
+  content: "";
+  /* top: 0%; */
+  /* transform: translate(-900%, -50%); */
+  left: 1%;
+  position: absolute;
+  height: 75%;
+  bottom: 0%;
+  width: 5px;
+  background: linear-gradient(0deg, #0d53fc, #01ae12);
+  z-index: 100;
+}
