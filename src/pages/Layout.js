@@ -32,7 +32,7 @@ export default function Layout() {
                     setAppointments(res.data[0]);
                 }).then(() => {
                     axios.get('https://619f39821ac52a0017ba467e.mockapi.io/Files').then((res) => {
-                        setFiles(res.data[0].files);
+                        setFiles(res.data);
                     }).then(() => {
                         setIsLoading(false)
                     })
